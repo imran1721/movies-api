@@ -41,18 +41,18 @@ This is a simple API Application for managing movies. It is built using Express.
 API Endpoints
 
 1.  List all movies
-    Endpoint: GET /movies
+    Endpoint: **GET /movies**
 
 2.  Search movies by Genre or Title
-    Endpoint: GET /seach?q={query}
+    Endpoint: **GET /seach?q={query}**
 
 3.  Add a new movie
-    Endpoint: POST /movies
-    Authorization: Basic
+    Endpoint: **POST /movies**
+    Authorization: ``Basic
         Username: admin
-        password: 12345
+        password: 12345``
     Request Body:
-    {
+    ```{
         "title": "The Matrix",
         "director": "Lana and Lilly Wachowski",
         "genre": ["Action", "Sci-Fi"],
@@ -62,12 +62,12 @@ API Endpoints
     }
 
 4.  Update an existing movie
-    Endpoint: PUT /movies/:id
-    Authorization: Basic
+    Endpoint: **PUT /movies/:id**
+    Authorization: ``Basic
         Username: admin
-        password: 12345
+        password: 12345``
     Request Body:
-    {
+    ```{
         "title": "Updated Title",
         "director": "Updated Director",
         "genre": ["Action", "Sci-Fi"],
@@ -77,7 +77,7 @@ API Endpoints
     }
 
 5.  Delete a movie
-    Endpoint: DELETE /api/movies/:id
-    Authorization: Basic
+    Endpoint: **DELETE /api/movies/:id**
+    Authorization: ``Basic
         Username: admin
-        password: 12345
+        password: 12345``
